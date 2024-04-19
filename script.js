@@ -44,7 +44,7 @@ function updateNavigation() {
   
   document.addEventListener("DOMContentLoaded", function() {
       // Fetch the nationalities data
-      fetch('./nationalities.txt')
+      fetch('./src/nationalities.txt')
         .then(response => response.text())
         .then(data => {
           var nationalities = data.split('\n');
@@ -64,7 +64,7 @@ function updateNavigation() {
         });
   
       // Fetch the data containing city and barangays
-      fetch('./ncr-list.json')
+      fetch('./src/ncr-list.json')
         .then(response => response.json())
         .then(data => {
           var citiesDropdown = document.getElementById("dropdownCity");
