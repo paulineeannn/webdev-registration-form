@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheSharp++ Registration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<!-- to do: set up meta details -->
+<body>
+    <nav cont="contTop">
+        <div class="contLogo">
+            <img class="logo" src="./logo.png" alt="logo">
+        </div>
+    
+        <div class="contProgress">
+            <div class="contProgressBar ">
+                <a href="#personalPage" class="progressText">Personal</a>
+            </div>
+    
+            <div class="contProgressBar">
+                <a href="#backgroundPage" class="progressText">Background</a>
+            </div>
+    
+        </div>
+    </nav>
+
+    <div class="contHeader" id="personalPage">
+        <h1 class="headerText">Let's connect! Share your details.</h1>
+    </div>
+
+    <div class="contForms">
+        <form>
+            <div class="contFormWrapper">
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">First Name*</h2>
+                        <input type="text" required class="inputText" placeholder="Maria">
+                    </div>
+    
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">Middle Name</h2>
+                        <input type="text" class="inputText" placeholder="Santos">
+                    </div>
+    
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">Last Name*</h2>
+                        <input type="text" required class="inputText" placeholder="Cruz">
+                    </div>
+                </div>
+
+                <div class="contFieldRow ">
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Birthday*</h2>
+                        <input type="date" required ="birthday" name="birthday" class="datepicker"  min="1900-01-01" max="2019-12-31">
+                    </div>
+
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Nationality*</h2>
+                        <select name="nationality" required id="dropdownNationality" class="dropdown">
+                                
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Email*</h2>
+                        <input type="email" required class="inputText" placeholder="maria@gmail.com">
+                    </div>
+    
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Contact Number*</h2>
+                        <input type="tel" required class="inputText" placeholder="09123456789">
+                    </div>
+                </div>
+
+                <div class="contFieldRow ">
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">City</h2>
+                        <select name="City" id="dropdownCity" class="dropdown">
+
+                        </select>
+                    </div>
+
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">Barangay</h2>
+                        <select name="barangay" id="dropdownBarangay" class="dropdown">
+                            <label></label>
+                        </select>
+                    </div>
+
+                    <div class="contFieldText fieldThree">
+                        <h2 class="labelFieldRow">Zip Code</h2>
+                        <input type="text" placeholder="Zip code">
+                    </div>
+
+                </div>
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldOne">
+                        <h2 class="labelFieldRow">Street Line</h2>
+                        <input type="text" required class="inputText" placeholder="Street Address">
+                    </div>
+                </div>
+    
+
+
+            </div>
+        </form>
+        
+            
+    </div>
+
+
+    <div class="contHeader" id="backgroundPage">
+        <h1 class="headerText">Tell us about your experience in tech.</h1>
+    </div>
+
+    <div class="contForms marginBottom" >
+        <form>
+            <div class="contFormWrapper">
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Occupation</h2>
+                        <input type="text" required class="inputText" placeholder="Web Developer">
+                    </div>
+    
+                    <div class="contFieldText fieldTwo">
+                        <h2 class="labelFieldRow">Company/University</h2>
+                        <input type="text" class="inputText" placeholder="ABC Company">
+                    </div>
+                </div>
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldOne">
+                        <h2 class="labelFieldRow">Tech Expertise Level</h2>
+                        <div class="containerRadio">
+                            <div class="contRadioOpts">
+                                <input type="radio" id="beginner" name="expertise" value="1">
+                                <label for="beginner">
+                                    <div class="labelRadio">Beginner</div>
+                                </label><br>
+                            </div>
+                            <div class="contRadioOpts">
+                                <input type="radio" id="intermediate" name="expertise" value="1">
+                                <label for="intermediate">
+                                    <div class="labelRadio">Intermediate</div>
+                                </label><br>
+                            </div>
+                            <div class="contRadioOpts">
+                                <input type="radio" id="advanced" name="expertise" value="1">
+                                <label for="advanced">
+                                    <div class="labelRadio">Advanced</div>
+                                </label><br>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldOne">
+                        <h2 class="labelFieldRow">Field of Interest</h2>
+                        <div class="containerCheckbox">
+                            <fieldset class="containerInterest">
+                                <legend>Software Development</legend>
+                                <input type="checkbox" id="frontendDev" value="frontendDev" class="indent">
+                                <label for="frontendDev">Frontend Development</label><br>
+                                <input type="checkbox" id="backendDev" value="backendDev" class="indent">
+                                <label for="backendDev">Backend Development</label><br>
+                                <input type="checkbox" id="fullstackDev" value="fullstackDev" class="indent">
+                                <label for="fullstackDev">Full-stack Development</label><br>
+                                <input type="checkbox" id="mobileDev" value="mobileDev" class="indent">
+                                <label for="mobileDev">Mobile App Development</label><br>
+                                <input type="checkbox" id="webDev" value="webDev" class="indent">
+                                <label for="webDev">Web Development</label><br>
+                                <input type="checkbox" id="gameDev" value="gameDev" class="indent">
+                                <label for="gameDev">Game Development</label><br>
+                              </fieldset>
+                            
+                              <fieldset class="containerInterest">
+                                <legend >Data Science and Analytics</legend>
+                                <input type="checkbox" id="dataEngineering" value="dataEngineering" class="indent">
+                                <label for="dataEngineering">Data Engineering</label><br>
+                                <input type="checkbox" id="dataAnalysis" value="dataAnalysis" class="indent">
+                                <label for="dataAnalysis">Data Analysis</label><br>
+                                <input type="checkbox" id="machineLearning" value="machineLearning" class="indent">
+                                <label for="machineLearning">Machine Learning</label><br>
+                                <input type="checkbox" id="dataVisualization" value="dataVisualization" class="indent">
+                                <label for="dataVisualization">Data Visualization</label><br>
+                                <input type="checkbox" id="dataMining" value="dataMining" class="indent">
+                                <label for="dataMining">Data Mining</label><br>
+                                <input type="checkbox" id="bigData" value="bigData" class="indent">
+                                <label for="bigData">Big Data</label><br>
+                              </fieldset>
+
+                               <fieldset class="containerInterest">
+                                <legend>Cybersecurity</legend>
+                                <input type="checkbox" id="networkSecurity" value="networkSecurity" class="indent">
+                                <label for="networkSecurity">Network Security</label><br>
+                                <input type="checkbox" id="informationSecurity" value="informationSecurity" class="indent">
+                                <label for="informationSecurity">Information Security</label><br>
+                                <input type="checkbox" id="ethicalHacking" value="ethicalHacking" class="indent">
+                                <label for="ethicalHacking">Ethical Hacking</label><br>
+                                <input type="checkbox" id="cyberDefense" value="cyberDefense" class="indent">
+                                <label for="cyberDefense">Cyber Defense</label><br>
+                                <input type="checkbox" id="cryptography" value="cryptography" class="indent">
+                                <label for="cryptography">Cryptography</label><br>
+                                <input type="checkbox" id="securityOperations" value="securityOperations" class="indent">
+                                <label for="securityOperations">Security Operations</label><br>
+                                </fieldset>
+
+                                <fieldset class="containerInterest">
+                                    <legend>AI and ML</legend>
+                                    <input type="checkbox" id="nlp" value="nlp" class="indent">
+                                    <label for="nlp">Natural Language Processing</label><br>
+                                    <input type="checkbox" id="computerVision" value="computerVision" class="indent">
+                                    <label for="computerVision">Computer Vision</label><br>
+                                    <input type="checkbox" id="deepLearning" value="deepLearning" class="indent">
+                                    <label for="deepLearning">Deep Learning</label><br>
+                                    <input type="checkbox" id="aiEducation" value="aiEducation" class="indent">
+                                    <label for="aiEducation">AI in Education</label><br>
+                                    <input type="checkbox" id="neuralNetworks" value="neuralNetworks" class="indent">
+                                    <label for="neuralNetworks">Neural Networks</label><br>
+                                    <input type="checkbox" id="robotics" value="robotics" class="indent">
+                                    <label for="robotics">Robotics</label><br>
+                                </fieldset>
+
+                                <fieldset class="containerInterest">
+                                    <legend>Cloud Computing</legend>
+                                    <input type="checkbox" id="cloudArchitecture" value="cloudArchitecture" class="indent">
+                                    <label for="cloudArchitecture">Cloud Architecture</label><br>
+                                    <input type="checkbox" id="devOps" value="devOps" class="indent">
+                                    <label for="devOps">DevOps</label><br>
+                                    <input type="checkbox" id="cloudSecurity" value="cloudSecurity" class="indent">
+                                    <label for="cloudSecurity">Cloud Security</label><br>
+                                    <input type="checkbox" id="cloudDeployment" value="cloudDeployment" class="indent">
+                                    <label for="cloudDeployment">Cloud Deployment</label><br>
+                                    <input type="checkbox" id="infrastructureAsCode" value="infrastructureAsCode" class="indent">
+                                    <label for="infrastructureAsCode">Infrastructure as Code (IaC)</label><br>
+                                    <input type="checkbox" id="cloudAutomation" value="cloudAutomation" class="indent">
+                                    <label for="cloudAutomation">Cloud Automation</label><br>
+                                </fieldset>
+
+                                <fieldset class="containerInterest">
+                                    <legend>UI/UX Design</legend>
+                                    <input type="checkbox" id="uiDesign" value="uiDesign" class="indent">
+                                    <label for="uiDesign">User Interface (UI) Design</label><br>
+                                    <input type="checkbox" id="uxResearch" value="uxResearch" class="indent">
+                                    <label for="uxResearch">User Experience (UX) Research</label><br>
+                                    <input type="checkbox" id="interactionDesign" value="interactionDesign" class="indent">
+                                    <label for="interactionDesign">Interaction Design</label><br>
+                                    <input type="checkbox" id="informationArchitecture" value="informationArchitecture" class="indent">
+                                    <label for="informationArchitecture">Information Architecture</label><br>
+                                    <input type="checkbox" id="usabilityTesting" value="usabilityTesting" class="indent">
+                                    <label for="usabilityTesting">Usability Testing</label><br>
+                                    <input type="checkbox" id="visualDesign" value="visualDesign" class="indent">
+                                    <label for="visualDesign">Visual Design</label><br>
+                                </fieldset>
+                                
+                        
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="contFieldRow ">
+                    <div class="contFieldText fieldOne">
+                        <h2 class="labelFieldRow">CV or Portfolio (PDF File)</h2>
+                        <input type="file" accept=".pdf">
+                    </div>
+                </div>
+
+                <div class="contFieldRow">
+                    <div class="contFieldText fieldOne">
+                        <h2 class="labelFieldRow">Why join?</h2>
+                        <textarea id="reason" placeholder="Enter short reason why do you want to join SheSharp++" name="reason" rows="4" cols="50" ></textarea>
+                    </div>
+                </div>
+
+                <div class="contFieldRow contSubmit">
+                    <input type="submit" id="submitButton">
+                </div>
+
+            </div>
+        </form>
+        
+
+            
+    </div>
+
+
+
+
+</body>
+
+<script type="module" src="./script.js"></script>
+</html>
