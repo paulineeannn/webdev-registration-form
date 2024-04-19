@@ -83,6 +83,9 @@ a {
 
 body {
     background-color: #FFEEF4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 p, h1, h2, h3, label, legend {
@@ -158,10 +161,12 @@ p, h1, h2, h3, label, legend {
     width: 31%;
 }
 
-
+#inputZip {
+    width: 100%;
+}
 
 .dropdown, .datepicker {
-    width: 105%;
+    width: 103%;
     font-size: 18px;
     border: 2px solid #fafafa;
     background-color: #fafafa;
@@ -170,16 +175,13 @@ p, h1, h2, h3, label, legend {
 }
 
 .dropdown:hover, .datepicker:hover {
-    width: 105%;
+    width: 103%;
     font-size: 18px;
     border: 2px solid #f8d3e0;
     background-color: #fafafa;
     height: 30px;
     font-family: Rubik, sans-serif;
 }
-
-
-
 
 
 .fieldTwo {
@@ -358,4 +360,18 @@ textarea:hover{
     padding: 7px  40px;
     margin-top: 20px;
     box-shadow: -1px 6px 16px -2px rgba(0,0,0,0.28);
+}
+
+footer {
+    background-color: #FF87B2;
+    width: 100%;
+    height: 60px;
+}
+
+#footerText {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
 }
