@@ -88,8 +88,18 @@ body {
     flex-direction: column;
 }
 
-p, h1, h2, h3, label, legend {
+p, h1, h2, h3, .agreeTerms, label, legend {
     font-family: Rubik, sans-serif;
+    color: #F65A83;
+}
+
+.agreeTerms {
+    font-weight: 400;
+}
+
+.terms {
+    text-decoration: underline;
+    font-weight: 600;
     color: #F65A83;
 }
 
