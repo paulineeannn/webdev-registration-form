@@ -376,6 +376,8 @@ footer {
     background-color: #F65A83;
     width: 100%;
     height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #footerText {
@@ -384,4 +386,5 @@ footer {
     font-size: 13px;
     font-weight: 400;
     margin-top: 22px;
+    line-height: 15px;
 }

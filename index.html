@@ -46,7 +46,7 @@
                     <div class="contFieldRow">
                         <div class="contFieldText fieldThree">
                             <h2 class="labelFieldRow">First Name*</h2>
-                            <input type="text" name="firstName" maxlength="20" class="inputText" placeholder="Maria">
+                            <input type="text" name="firstName" maxlength="20" required class="inputText" placeholder="Maria">
                         </div>
         
                         <div class="contFieldText fieldThree">
@@ -91,21 +91,21 @@
                     <div class="contFieldRow ">
                         <div class="contFieldText fieldThree">
                             <h2 class="labelFieldRow">City*</h2>
-                            <select name="city" id="dropdownCity" class="dropdown">
+                            <select name="city" id="dropdownCity" class="dropdown" required>
                                 <option value="" disabled selected hidden>Select a city</option>
                             </select>
                         </div>
 
                         <div class="contFieldText fieldThree">
                             <h2 class="labelFieldRow">Barangay*</h2>
-                            <select name="barangay" id="dropdownBarangay" class="dropdown">
+                            <select name="barangay" id="dropdownBarangay" class="dropdown" required>
                                 <option value="" disabled selected hidden>Select a barangay</option>
                             </select>
                         </div>
 
                         <div class="contFieldText fieldThree">
                             <h2 class="labelFieldRow">Zip Code*</h2>
-                            <input type="text" name="zip" maxlength="4" placeholder="Zip code" id="inputZip">
+                            <input type="text" name="zip" required maxlength="4" placeholder="Zip code" id="inputZip">
                         </div>
 
                     </div>
@@ -141,22 +141,22 @@
 
                     <div class="contFieldRow">
                         <div class="contFieldText fieldOne">
-                            <h2 class="labelFieldRow">Tech Expertise Level</h2>
+                            <h2 class="labelFieldRow">Tech Expertise Level*</h2>
                             <div class="containerRadio">
                                 <div class="contRadioOpts">
-                                    <input type="radio" id="beginner" name="expertise" value="1">
+                                    <input type="radio" id="beginner" required name="expertise" value="1">
                                     <label for="beginner">
                                         <div class="labelRadio">Beginner</div>
                                     </label><br>
                                 </div>
                                 <div class="contRadioOpts">
-                                    <input type="radio" id="intermediate" name="expertise" value="2">
+                                    <input type="radio" id="intermediate" required name="expertise" value="2">
                                     <label for="intermediate">
                                         <div class="labelRadio">Intermediate</div>
                                     </label><br>
                                 </div>
                                 <div class="contRadioOpts">
-                                    <input type="radio" id="advanced" name="expertise" value="3">
+                                    <input type="radio" id="advanced" required name="expertise" value="3">
                                     <label for="advanced">
                                         <div class="labelRadio">Advanced</div>
                                     </label><br>
@@ -291,12 +291,12 @@
                     </div>
 
                     <div class="contFieldRow">
-                        <input type="checkbox" id="checkTerms">
-                        <label for="checkTerms" required name="terms" class="agreeTerms">I have read and agree to the <a class="terms" href="./src/SheSharp++ Terms and Conditions.pdf" target="_blank">terms and conditions</a> of SheSharp++.</label>
+                        <input type="checkbox" required id="checkTerms">
+                        <label for="checkTerms" name="terms" class="agreeTerms">I have read and agree to the <a class="terms" href="./src/SheSharp++ Terms and Conditions.pdf" target="_blank">terms and conditions</a> of SheSharp++.</label>
                     </div>
 
                     <div class="contFieldRow contSubmit">
-                        <input type="submit" id="submitButton" value="submit" name="submit">
+                        <input type="submit" id="submitButton" required value="submit" name="submit">
                     </div>
 
                 </div>
@@ -307,7 +307,7 @@
     </div>
 
     <footer>
-        <h1 id="footerText">Copyright ©2024 | Created by: Pauline Ann Bautista</h1>
+        <h1 id="footerText">Copyright ©2024 | Created by: Pauline Ann Bautista<br>This organization is a fictional entity created for academic purposes.</h1>
     </footer>
 
 
