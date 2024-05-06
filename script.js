@@ -44,25 +44,6 @@ window.addEventListener('scroll', function() {
 // populate dropdown
 
 document.addEventListener("DOMContentLoaded", function() {
-  // fetch the nationalities data
-  fetch('./src/nationalities.txt')
-  .then(response => response.text())
-  .then(data => {
-    const nationalities = data.split('\n');
-
-    const dropdownNationality = document.getElementById("dropdownNationality");
-
-    // Populate the dropdown
-    for (let i = 0; i < nationalities.length; i++) {
-      const option = document.createElement("option");
-      option.textContent = nationalities[i].trim();
-      dropdownNationality.appendChild(option);
-    }
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
   // fetch the json containing city and barangays
   fetch('./src/ncr-list.json')
     .then(response => response.json())
